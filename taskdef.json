@@ -1,5 +1,5 @@
 {
-  "executionRoleArn": "arn:aws:iam::<AWS_ACCOUNT_ID>:role/<APP_NAME>_ecsTaskExecutionRole",
+  "executionRoleArn": "arn:aws:iam::<AWS_ACCOUNT_ID>:role/<APP_NAME>_executionrole",
   "containerDefinitions": [
     {
       "name": "<APP_NAME>",
@@ -8,7 +8,7 @@
       "memoryReservation": <MEMORY_RESV>,
       "portMappings": [
         {
-          "hostPort": 0,
+          "hostPort": <SERVICE_PORT>,
           "protocol": "tcp",
           "containerPort": <SERVICE_PORT>
         }
@@ -28,6 +28,6 @@
   "requiresCompatibilities": [
     "FARGATE"
   ],
-  "networkMode": null,
+  "networkMode": "awsvpc",
   "family": "<APP_NAME>"
 }
