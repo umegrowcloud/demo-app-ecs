@@ -26,7 +26,7 @@
     }
   ],
   "requiresCompatibilities": [
-    "EC2"
+    "FARGATE"
   ],
   "networkMode": null,
   "family": "<APP_NAME>"
