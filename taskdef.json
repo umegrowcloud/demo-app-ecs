@@ -5,12 +5,12 @@
       "name": "<APP_NAME>",
       "image": "<IMAGE_NAME>",
       "essential": true,
-      "memoryReservation": "<MEMORY_RESV>",
+      "memoryReservation": 100,
       "portMappings": [
         {
-          "hostPort": "<SERVICE_PORT>",
+          "hostPort": 8000,
           "protocol": "tcp",
-          "containerPort": "<SERVICE_PORT>"
+          "containerPort": 8000
         }
       ],
       "environment": [
