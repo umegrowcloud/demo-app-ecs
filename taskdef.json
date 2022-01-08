@@ -5,12 +5,12 @@
       "name": "<APP_NAME>",
       "image": "<IMAGE_NAME>",
       "essential": true,
-      "memoryReservation": <MEMORY_RESV>,
+      "memoryReservation": "<MEMORY_RESV>",
       "portMappings": [
         {
-          "hostPort": <SERVICE_PORT>,
+          "hostPort": "<SERVICE_PORT>",
           "protocol": "tcp",
-          "containerPort": <SERVICE_PORT>
+          "containerPort": "<SERVICE_PORT>"
         }
       ],
       "environment": [
@@ -29,5 +29,6 @@
     "FARGATE"
   ],
   "networkMode": "awsvpc",
+  "cpu": "512",
   "family": "<APP_NAME>"
 }
